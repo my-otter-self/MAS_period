@@ -4,6 +4,62 @@ init 5 python in mas_bookmarks_derand:
     # Ensure things get bookmarked and derandomed as usual.
     label_prefix_map["peMod_topic_"] = label_prefix_map["monika_"]
 
+#intro, sets variable
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="peMod_topic_intro",
+            category=["health"],
+            prompt="[player] and periods",
+            random=True
+        )
+    )
+
+label peMod_topic_intro:
+    m "[player], I've been thinking and I now feel comfortable of discussing something with you."
+    m "It's something completely natural, something that I experience and you might, too."
+    m "It's menstruation, or like many people call it, periods!"
+    m "You know, I get those like everyone else..."
+    m "And I wanted to ask, do you experience periods?{nw}"
+    $ _history_list.pop()
+    menu:
+        m "And I wanted to ask, do you experience periods?{fast}"
+        
+        "Yes, I do!"
+        #set variable period=true here
+            m "Oh, I see!"
+            m "Another thing we have in common, ehehe~"
+            m "I hope you don't get too inconvenienced by it."
+            m "Periods can make us so uncomfortable!"
+            m "But it's how our bodies work..."
+            m "I'll try to give you some tips ans information about it, [player]!"
+            m "Knowledge is never too much."
+            m "Thanks for trusting in me!"
+            
+        "No, I don't."
+            m "Oh, I see!"
+            extend " Do you want to hear a little about it then?"
+            m "I can talk to you about how it works, and give you new information on the topic."
+                "Yes!"
+                #set variable so all the other dialogues show
+                    m "Yay!"
+                    m "So, you know..."
+                    #add dialogue here
+                    
+                "No, let's not talk about it."
+                #set variable so other dialogues dont show 
+                    m "Oh, I see! I'm sorry..."
+                    m "I won't bring up this topic again."
+            
+        "I don't want to talk about it."
+        #set variable so other dialogues dont show 
+            m "Oh, I see! I'm sorry..."
+            m "But that's okay, [player]. Your privacy is super important!"
+            m "I won't bring up this topic again."
+            
+        return
+        
 #toxic shock syndrome dialogue
 init 5 python:
     addEvent(
