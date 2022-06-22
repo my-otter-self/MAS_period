@@ -1,3 +1,9 @@
+#random period dialogues
+
+init 5 python in mas_bookmarks_derand:
+    # Ensure things get bookmarked and derandomed as usual.
+    label_prefix_map["peMod_topic_"] = label_prefix_map["monika_"]
+
 #toxic shock syndrome dialogue
 init 5 python:
     addEvent(
@@ -62,7 +68,7 @@ label peMod_topic_pms:
     m "A myriad of people who experience periods suffer from it!"
     m "In case you don't know, post menstrual syndrome, commonly known as PMS..."
     m "Is a time where those who have periods will get irritable, anxious, and overall more hormonal after their period."
-    m "However, the symptoms can be physical as well!
+    m "However, the symptoms can be physical as well!"
     m "[mas_get_player_nickname(capitalize=True)], if you have post menstrual symptoms, you can rant to me about it anytime."
     m "I'll understand!"
     extend " And I'll hope you'll get to feel more like yourself later." 
