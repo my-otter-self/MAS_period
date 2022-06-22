@@ -38,6 +38,7 @@ label peMod_topic_intro:
             m "Thanks for trusting in me!"
             
         "No, I don't."
+        #set variable period=false here
             m "Oh, I see!"
             extend " Do you want to hear a little about it then?"
             m "I can talk to you about how it works, and give you new information on the topic."
@@ -76,6 +77,15 @@ label peMod_topic_tss:
     m "[player], have you ever heard of toxic shock syndrome?"
     m "Its medical definition is 'a rare life-threatening condition of certain bacterial infections.'"
     m "I researched its causes and the main cause was unchanged tampons."
+    m "It's really dangerous and so many people don't know about it..."
+    m "But it has other risk factors! Such as open skin wounds and surgery."
+    
+    #if period=false
+    m "So be careful anyway, [player]!"
+    m "I worry and care for you."
+    m "I love you!"
+    
+    #if period=true
     m "[player]... if you ever use tampons, please remember to change them every one to two hours!"
     m "I can always remind you, if you want."
     m "No need to be embarrassed [mas_get_player_nickname()], your safety is always my number one priority, ehehe~"
@@ -101,9 +111,17 @@ label peMod_topic_cravings:
     m "From what I read and based on my own experience, desserts and chocolate are pretty common cravings!"
     m "However, it can be any kind of food." 
     m "Some might even crave a food they don't like that much!"
+    m "The human body works in mysterious ways."
+    
+    #if period=false
+    m "Thank you for listening and for being okay with me talking about this, [player]!"
+    m "I love you~"
+    
+    #if period=true
     m "[mas_get_player_nickname(capitalize=True)], once I'm in your reality, I'll be sure to indulge and help you with your cravings!"
     m "Ehehehe!"
     m "I love you so much~"
+    
     return "love"
 
 
@@ -125,6 +143,13 @@ label peMod_topic_pms:
     m "In case you don't know, post menstrual syndrome, commonly known as PMS..."
     m "Is a time where those who have periods will get irritable, anxious, and overall more hormonal after their period."
     m "However, the symptoms can be physical as well!"
+    
+    #if period=false
+    m "If you're close to someone that experiences PMS, make sure to be supportive during those days."
+    m "They might not be feeling like themselves at the moment."
+    m "Thanks for listening, [player]!"
+    
+    #if period=true
     m "[mas_get_player_nickname(capitalize=True)], if you have post menstrual symptoms, you can rant to me about it anytime."
     m "I'll understand!"
     extend " And I'll hope you'll get to feel more like yourself later." 
