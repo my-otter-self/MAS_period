@@ -63,7 +63,7 @@ label peMod_topic_intro:
             m "But that's okay, [player]. Your privacy is super important!"
             m "I won't bring up this topic again."
 
-        return
+    return
 
 #toxic shock syndrome dialogue
 init 5 python:
