@@ -11,10 +11,11 @@ init 5 python:
     )
 
 label peMod_mood_pms:
-    "Oh no, [player]!"
+    m "Oh no, [player]!"
     #add dialogue
     return
-    
+
+
 init 5 python:
     addEvent(
         Event(
@@ -28,6 +29,6 @@ init 5 python:
     )
 
 label peMod_mood_cramps:
-    "[player]!"
+    m "[player]!"
     #add dialogue
     return
