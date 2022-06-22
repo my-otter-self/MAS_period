@@ -29,29 +29,29 @@ label peMod_change_reminder_request:
         m "It's usually recommended to change your pads or tampons every 2 hours, is that okay with you?{fast}"
 
         "Yep!":
-            $ interval = store.hyMod_reminder_utils.INTERVAL_HOURLY_2
+            $ interval = store.peMod_reminder_utils.INTERVAL_HOURLY_2
             m 1dublb "Alrighty then! I'll be sure to remind you about it every two 2 hours, [mas_get_player_nickname()]~"
             m "When your period is over, you can ask me to stop reminding you!"
             m "Thank you for taking care of yourself, [player]~"
             jump .add_reminder
 
         "Maybe every 4 hours?":
-            $ interval = store.hyMod_reminder_utils.INTERVAL_HOURLY_4
+            $ interval = store.peMod_reminder_utils.INTERVAL_HOURLY_4
 
         "How about every 6 hours?":
-            $ interval = store.hyMod_reminder_utils.INTERVAL_HOURLY_6
+            $ interval = store.peMod_reminder_utils.INTERVAL_HOURLY_6
 
     m 1dublb "Alrighty then! I'll be sure to remind you about it every few hours, [mas_get_player_nickname()]~"
 
 label .add_reminder:
     python:
         store.peMod_reminder.addRecurringReminder(
-            "hyMod_reminder_event",
+            "peMod_reminder_event",
             datetime.timedelta(seconds=3600), interval, store.peMod_reminder_utils.LATENCY_HOURLY
         )
 
-        mas_hideEVL("hyMod_reminder_start", "EVE", lock=True)
-        mas_showEVL("hyMod_reminder_stop", "EVE", unlock=True)
+        mas_hideEVL("peMod_reminder_start", "EVE", lock=True)
+        mas_showEVL("peMod_reminder_stop", "EVE", unlock=True)
 
     return "derandom"
 
@@ -86,8 +86,8 @@ init 5 python:
     store.peMod_reminder.addReminderEvent(
         Event(
             persistent.event_database,
-            eventlabel="mshMod_medication_reminder",
-            conditional="store.mshMod_reminder.shouldTriggerReminder('mshMod_medication_reminder')",
+            eventlabel="peMod_medication_reminder",
+            conditional="store.pehMod_reminder.shouldTriggerReminder('peMod_medication_reminder')",
             action=EV_ACT_QUEUE,
             rules={"force repeat": None, "bookmark_rule": mas_bookmarks_derand.BLACKLIST}
         )
