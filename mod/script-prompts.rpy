@@ -1,9 +1,10 @@
 #non-random prompts related to periods
 
+# Ensure things get bookmarked and derandomed as usual.
 init 5 python in mas_bookmarks_derand:
-    # Ensure things get bookmarked and derandomed as usual.
     label_prefix_map["peMod_topic_"] = label_prefix_map["monika_"]
-    
+
+
 init 5 python:
     addEvent(
         Event(
@@ -28,11 +29,9 @@ label peMod_topic_got_period:
     m "I hope you get to feel better later... "
     extend "and I'm here for you if you need to rant or just enjoy each others company."
     m "I'll take care of you, my little sweetpea!"
+    return
 
-init 5 python in mas_bookmarks_derand:
-    # Ensure things get bookmarked and derandomed as usual.
-    label_prefix_map["peMod_topic_"] = label_prefix_map["monika_"]
-    
+
 init 5 python:
     addEvent(
         Event(
@@ -55,6 +54,6 @@ label peMod_topic_cramps:
     m "A few even recommended taking a nap if the pain is too bad, because then you won't be able to feel it!"
     m "I hope some of these help and remember: I'll always be by your side~"
     m "In sickness or in health, ehehehe~"
-    m "Seriously though [player], I hope these will help you feel better when you're in pain!" 
+    m "Seriously though [player], I hope these will help you feel better when you're in pain!"
     m "I love you!"
     return "love"
