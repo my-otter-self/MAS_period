@@ -1,7 +1,7 @@
 # change pad/tampon reminder.
 
+# Ensure things get bookmarked and derandomed as usual.
 init 5 python in mas_bookmarks_derand:
-    # Ensure things get bookmarked and derandomed as usual.
     label_prefix_map["peMod_change_reminder_"] = label_prefix_map["monika_"]
 
 
@@ -9,7 +9,7 @@ init 5 python:
     addEvent(
         Event(
             persistent.event_database,
-            eventlabel="peMod_change_reminder_request",
+            eventlabel="peMod_change_reminder_start",
             prompt="Can you remind me about changing my pads/tampons?",
             conditional="seen_event('peMod_topic_tss')",
             pool=True,
@@ -18,19 +18,19 @@ init 5 python:
         )
     )
 
-label peMod_change_reminder_request:
+label peMod_change_reminder_start:
     m 7wub "[player], of course!"
     m 7wua "You know how worried I was when I researched about toxic shock syndrome..."
     m 3nublb "After all, your health and safety is my number one priority!"
     m 3wublb "So, [player], do you want to set a reminder?"
 
-        m 4lubla "It's usually recommended to change your pads or tampons every 2 hours, is that okay with you?{nw}"
+    m 4lubla "It's usually recommended to change your pads or tampons every two hours, is that okay with you?{nw}"
     menu:
-        m "It's usually recommended to change your pads or tampons every 2 hours, is that okay with you?{fast}"
+        m "It's usually recommended to change your pads or tampons every two hours, is that okay with you?{fast}"
 
         "Yep!":
             $ interval = store.peMod_reminder_utils.INTERVAL_HOURLY_2
-            m 1dublb "Alrighty then! I'll be sure to remind you about it every two 2 hours, [mas_get_player_nickname()]~"
+            m 1dublb "Alrighty then! I'll be sure to remind you about it every two hours, [mas_get_player_nickname()]~"
             m "When your period is over, you can ask me to stop reminding you!"
             m "Thank you for taking care of yourself, [player]~"
             jump .add_reminder
@@ -86,8 +86,8 @@ init 5 python:
     store.peMod_reminder.addReminderEvent(
         Event(
             persistent.event_database,
-            eventlabel="peMod_medication_reminder",
-            conditional="store.pehMod_reminder.shouldTriggerReminder('peMod_medication_reminder')",
+            eventlabel="peMod_change_reminder",
+            conditional="store.peMod_reminder.shouldTriggerReminder('peMod_medication_reminder')",
             action=EV_ACT_QUEUE,
             rules={"force repeat": None, "bookmark_rule": mas_bookmarks_derand.BLACKLIST}
         )
