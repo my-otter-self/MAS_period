@@ -4,6 +4,7 @@
 init 5 python in mas_bookmarks_derand:
     label_prefix_map["peMod_topic_"] = label_prefix_map["monika_"]
 
+
 #intro, sets variable
 init 5 python:
     addEvent(
@@ -64,6 +65,7 @@ label peMod_topic_intro:
             m "I won't bring up this topic again."
 
     return
+
 
 #toxic shock syndrome dialogue
 init 5 python:
