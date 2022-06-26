@@ -1,35 +1,15 @@
 default persistent._pe_mod_active_reminders = dict()
 
+
 init 4 python in peMod_reminder_utils:
 
     import datetime
 
-    INTERVAL_DAILY = datetime.timedelta(days=1)
-    INTERVAL_WEEKLY = datetime.timedelta(days=7)
+    INTERVAL_HOURLY_2 = datetime.timedelta(seconds=7200)
+    INTERVAL_HOURLY_4 = datetime.timedelta(seconds=14400)
+    INTERVAL_HOURLY_6 = datetime.timedelta(seconds=21600)
 
     LATENCY_HOURLY = datetime.timedelta(seconds=3600)
-    LATENCY_DAILY = datetime.timedelta(days=1)
-
-    TOD_EVENING = (22, 0)  # 22:00, 10pm
-
-    def _getDelay(tod, delta):
-        hours, minutes = tod
-        now = datetime.datetime.now()
-
-        # Ensure we don't skip over today's Time Of Day (e.g.
-        # if requested delay is until 6pm and it's 3am, we shouldn't
-        # blindly add delta; in this case, we should subtract 6pm - 3am
-        # and return that as the delay.)
-        if now < now.replace(hour=hours, minute=minutes):
-            return now.replace(hour=hours, minute=minutes) - now
-
-        return (now + delta).replace(hour=hours, minute=minutes) - now
-
-    def _getDailyDelay(tod):
-        return _getDelay(tod, INTERVAL_DAILY)
-
-    def getDailyEveningDelay():
-        return _getDailyDelay(TOD_EVENING)
 
 
 init 4 python in peMod_reminder:

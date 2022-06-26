@@ -73,7 +73,7 @@ label peMod_change_reminder_stop:
 
     python:
         # Same here, DO NOT move this anywhere, this has to be right above the return statement.
-        store.peMod_reminder.stopReminder("peMod_medication_reminder")
+        store.peMod_reminder.stopReminder("peMod_change_reminder")
 
         # Hide this event as now we need to enable player to ask to remind again.
         mas_hideEVL("peMod_medication_reminder_stop", "EVE", lock=True)
