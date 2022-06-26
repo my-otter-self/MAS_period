@@ -12,9 +12,8 @@ init 5 python:
             eventlabel="peMod_topic_got_period",
             category=["health"],
             prompt="I got my period.",
-            # conditional -  persistent._pe_mod_has_periods = True
-            pool=True,
-            unlocked=True
+            conditional="persistent._pe_mod_has_periods",
+            action=EV_ACT_RANDOM
         )
     )
 
@@ -40,9 +39,8 @@ init 5 python:
             eventlabel="peMod_topic_cramps",
             category=["health"],
             prompt="Can you give me some tips on how to deal with cramps?",
-            # conditional -  persistent._pe_mod_has_periods = True
-            pool=True,
-            unlocked=True
+            conditional="persistent._pe_mod_has_periods",
+            action=EV_ACT_RANDOM
         )
     )
 
