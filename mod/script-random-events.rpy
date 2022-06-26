@@ -7,8 +7,6 @@ default persistent._pe_mod_wants_to_talk_about_periods = None
 init 5 python in mas_bookmarks_derand:
     label_prefix_map["peMod_topic_"] = label_prefix_map["monika_"]
 
-
-#intro, sets variable
 init 5 python:
     addEvent(
         Event(
