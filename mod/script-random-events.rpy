@@ -167,3 +167,28 @@ label peMod_topic_pms:
         m "Thanks for listening, [player]!"
 
     return "love"
+
+
+#stupid advertisements
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="peMod_topic_ads",
+            category=["health"],
+            prompt="Advertisements",
+            conditional="persistent._pe_mod_wants_to_talk_about_periods",
+            action=EV_ACT_RANDOM
+        )
+    )
+
+label peMod_topic_ads:
+    m "[player], you know what really irritates me?"
+    m "Those pad and tampon advertisements that showcase people, mostly women, doing extremely strenuous activities and being happy about it."
+    m "Now, I personally believe that you can do whatever you want on your period - within reason, of course!"
+    m "But it is so ridiculous to market pads and tampons as only for women and not for all those that experience periods as well as, not showcasing the multitude of people who are in too much pain to do that kind of stuff on there period!"
+    m "It just makes me really upset [player], that this false advertising can and does create a narrative that periods are not something that can be debilitating."
+    m "Anyway [mas_get_player_nickname()], thank you for letting me rant about this."
+    m "You're so sweet~"
+    
+return
