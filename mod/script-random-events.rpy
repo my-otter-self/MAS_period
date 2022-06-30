@@ -176,7 +176,7 @@ init 5 python:
             persistent.event_database,
             eventlabel="peMod_topic_ads",
             category=["health"],
-            prompt="Advertisements",
+            prompt="Pad/tampon advertisements",
             conditional="persistent._pe_mod_wants_to_talk_about_periods",
             action=EV_ACT_RANDOM
         )
@@ -190,5 +190,81 @@ label peMod_topic_ads:
     m "It just makes me really upset [player], that this false advertising can and does create a narrative that periods are not something that can be debilitating."
     m "Anyway [mas_get_player_nickname()], thank you for letting me rant about this."
     m "You're so sweet~"
+    
+return
+
+
+#myth 1
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="peMod_topic_feelings",
+            category=["health"],
+            prompt="Dismissing feelings during periods",
+            conditional="persistent._pe_mod_wants_to_talk_about_periods",
+            action=EV_ACT_RANDOM
+        )
+    )
+
+label peMod_topic_feelings:
+    m "[player]... Have you ever had your feelings dismissed because of an ignorant reason?"
+    m "Well, there is a stigma around menstruation periods that says it's okay for those who don't have them to dismiss the feeling of those that do."
+    m "I find that beyond disrespectful and even borderline abusive."
+    m "It's honestly manipulative because some use the argument that during their periods, people can't trust their own feelings."
+    m "And that's a common manipulation tactic!"
+    m "[mas_get_player_nickname(Capitalize=True)], I want you to know that those who really love us would never dismiss our feelings at all."
+    m "And just know that you can always come to me no matter what!"
+    m "I love you more than life itself."
+    
+return
+    
+#myth 2
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="peMod_topic_cramppain",
+            category=["health"],
+            prompt="Cramp pain stigma",
+            conditional="persistent._pe_mod_wants_to_talk_about_periods",
+            action=EV_ACT_RANDOM
+        )
+    )
+
+label peMod_topic_cramppain:
+    m "[player], remember when I talked about cramps?"
+    m "Well it's come to my attention that there is a stigma that the pain someone might experience on their period is the same as any other."
+    m "And that's just plain incorrect!"
+    m "It's been scientifically proven that everyone experience their periods differently, including pain wise."
+    m "In fact, some cramps can be so horrible there on the same pain level as a heart attack!"
+    m "..."
+    m "I'm sorry [player], I just get upset when people ignore others suffering and spread misinformation."
+    m "[mas_get_player_nickname(Capitalize=True)], if you ever are in pain or any kind, just know that I understand and you are completely valid."
+    m "I love you so much and truly only want the best for you."
+
+return
+
+#myth 3
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="peMod_topic_alwaysperiod",
+            category=["health"],
+            prompt="Always on their period",
+            conditional="persistent._pe_mod_wants_to_talk_about_periods",
+            action=EV_ACT_RANDOM
+        )
+    )
+
+label peMod_topic_alwaysperiod:
+    m "[player], have you ever heard anyone perpetuate the stigma that people - those who have them - are always on their period?"
+    m "Honestly, it makes me upset that people say this."
+    m "No one can control their periods and even those on birth control (to help with the regularity of periods) often still have irregular periods."
+    m "In my personal opinion this is just a way for those who don't experience it to complain about something for petty reasons."
+    m "Anyway, [player], thanks for listening to me rant!"
+    m "You're always so sweet!"
+    m "I love you so much~"
     
 return
