@@ -269,7 +269,7 @@ label peMod_topic_alwaysperiod:
     
 return
 
-
+#myth 4
 init 5 python:
     addEvent(
         Event(
@@ -292,5 +292,89 @@ label peMod_topic_ashamedperiod:
     m "Anyone who tries to shame you for something as human as a period is so insecure that they need to put you down to make themselves feel better."
     m "And those who love you will never shame you for anything."
     m "I love you with all my heart and soul." 
+    
+return
+
+#myth 5
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="peMod_topic_personalperiod",
+            category=["health"],
+            prompt="Period as something personal",
+            conditional="persistent._pe_mod_wants_to_talk_about_periods",
+            action=EV_ACT_RANDOM
+        )
+    )
+
+label peMod_topic_personalperiod:
+    m "[player], there's something I don't understand about your reality."
+    m "Why do people treat some biological aspects as personal problems?"
+    m "More specifically periods."
+    m "I mean, I've researched them and there are a myriad of serious medical problems and infections that can develop and show symptoms through a period."
+    m "Like toxic shock syndrome and polycystic ovaries."
+    m "So why are we treating them as something that shouldn't be talked about, when scienfically the best prevention is information?"
+    m "The more we know about something the better we can prevent it."
+    m "Hm..."
+    m "[player], I want you to know that you can come talk to me about anything!" 
+    m "And please, remember to take care of yourself, no matter what society thinks."
+    m "You're my number one priority, not society."
+    m "Just know that I'll love you no matter what."
+
+return
+
+#myth 6
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="peMod_topic_enbyperiod",
+            category=["health"],
+            prompt="Periods are gender neutral",
+            conditional="persistent._pe_mod_wants_to_talk_about_periods",
+            action=EV_ACT_RANDOM
+        )
+    )
+
+label peMod_topic_enbyperiod:
+    m "Hey [player], I've been meaning to tell you about a recent stigma I've heard."
+    m "It's one I feel we never realized because it's so common and everywhere."
+    m "It states that only women have periods."
+    m "This statment is just so incorrect!"
+    m "A myriad of those who are non gender conforming as well as those whom are intersex experience them."
+    m "And that doesn't even include the amount of those who are trans that experience them."
+    m "The point is, [mas_get_player_nickname()], that we should be aware of what we say and how the statements can be inaccurate if we don't think of experiences outside of our own."
+    m "[player], if you did this without knowing, just know that it's alright, and be more mindful going on."
+    m "You know what they say! The best apology is changed behaviour, ehehe~"
+    m "And I know you'll be more mindful from now on, you're always so considerate like that!"
+    m "Oh, I love you so much~"
+
+return
+
+#myth 7
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="peMod_topic_hormonesperiod",
+            category=["health"],
+            prompt="Hormones define women",
+            conditional="persistent._pe_mod_wants_to_talk_about_periods",
+            action=EV_ACT_RANDOM
+        )
+    )
+
+label peMod_topic_hormonesperiod:
+    m "[player], I've read something recently that has me feeling down."
+    m "It was an article on myths and one of them was that hormones define women."
+    m "Now, it wasn't the fact the the statement was a myth but, that it was even considered to be a fact."
+    m "I don't understand how people could think that something biological could define a person in their entirety."
+    m "And more specifically hormones! They fluctuate all the time!"
+    m "How can something ever-changing define a person?"
+    m "[player], I want you to know you, woman or not, are more than your biological makeup and feelings."
+    m "You have such a kind and beautiful soul..."
+    m "And that's why I fell in love with you."
+    m "Please do remember that."
     
 return
