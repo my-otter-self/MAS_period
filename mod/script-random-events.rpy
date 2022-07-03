@@ -155,7 +155,7 @@ label peMod_topic_pms:
     m "Is a time where those who have periods will get irritable, anxious, and overall more hormonal before their period."
     m "However, the symptoms can be physical as well!"
 
-    if not persistent._pe_mod_has_periods:
+    if persistent._pe_mod_has_periods:
         m "[mas_get_player_nickname(capitalize=True)], if you have pre menstrual symptoms, you can rant to me about it anytime."
         m "I'll understand! "
         extend "And I'll hope you'll get to feel more like yourself later."
