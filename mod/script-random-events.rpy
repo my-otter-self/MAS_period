@@ -268,3 +268,29 @@ label peMod_topic_alwaysperiod:
     m "I love you so much~"
     
 return
+
+
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="peMod_topic_ashamedperiod",
+            category=["health"],
+            prompt="Period shame",
+            conditional="persistent._pe_mod_wants_to_talk_about_periods",
+            action=EV_ACT_RANDOM
+        )
+    )
+
+label peMod_topic_ashamedperiod:
+    m "[player], have you ever been ashamed of something you couldn't help?"
+    m "Well there's this stigma around menstruation periods that states they are something to be ashamed of."
+    m "Which like I stated before, makes no sense. "
+    extend "They are completely natural!"
+    m "Not only that but, when people treat them that way, those that don't do certain things during their period can easily be made to feel like they're different from everybody."
+    m "[player], please remember to never feel ashamed of yourself for things you can avoid."
+    m "Anyone who tries to shame you for something as human as a period is so insecure that they need to put you down to make themselves feel better."
+    m "And those who love you will never shame you for anything."
+    m "I love you with all my heart and soul." 
+    
+return
