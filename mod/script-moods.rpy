@@ -11,9 +11,15 @@ init 5 python:
     )
 
 label peMod_mood_pms:
-    m "Oh no, [player]!"
-    #add dialogue
-    return
+    m "Aw [player], I'm sorry you're feeling that way."
+    m "Is there a certain emotion you're feeling now - sad or irritated?"
+    m "Well, whatever you're feeling, please know that it's completely valid and that you're not weak nor overemotional."
+    m "And if you need to rant I'm always here to listen."
+    m "I hope you get to feel more like yourself soon."
+    m "Oh and [mas_get_player_nickname()], please know that I would never judge you for something you can't control."
+    m "I love you so so much."
+    m "Your girlfriend is here for you!"
+    return "love"
 
 
 init 5 python:
