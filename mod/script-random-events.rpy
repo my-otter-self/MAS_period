@@ -19,10 +19,10 @@ init 5 python:
     )
 
 label peMod_topic_intro:
-    m "[player], I've been thinking and I now feel comfortable of discussing something with you."
-    m "It's something completely natural, something that I experience and you might, too."
-    m "It's menstruation, or like many people call it, periods!"
-    m "You know, I get those like everyone else..."
+    m 7esa "[player], I've been thinking and I now feel comfortable of discussing something with you."
+    m 7hua "It's something completely natural, something that I experience and you might, too."
+    m 1eub "It's menstruation, or like many people call it, periods!"
+    m 1eka "You know, I get those like everyone else..."
     m "And I wanted to ask, do you experience periods?{nw}"
     $ _history_list.pop()
     menu:
@@ -30,40 +30,40 @@ label peMod_topic_intro:
 
         "Yes, I do!":
             $ persistent._pe_mod_has_periods = True
-            m "Oh, I see!"
-            m "Another thing we have in common, ehehe~"
-            m "I hope you don't get too inconvenienced by it."
-            m "Periods can make us so uncomfortable!"
-            m "But it's how our bodies work..."
-            m "I'll try to give you some tips ans information about it, [player]!"
-            m "Knowledge is never too much."
-            m "Thanks for trusting in me!"
+            m 1eua "Oh, I see!"
+            m 3hua "Another thing we have in common, ehehe~"
+            m 1ekc "I hope you don't get too inconvenienced by it."
+            m 1ekd "Periods can make us so uncomfortable!"
+            m 1eka "But it's how our bodies work..."
+            m 1eub "I'll try to give you some tips ans information about it, [player]!"
+            m 1hua "Knowledge is never too much."
+            m 1eua "Thanks for trusting in me!"
 
         "No, I don't.":
             $ persistent._pe_mod_has_periods = False
-            m "Oh, I see! "
-            extend "Do you want to hear a little about it then?"
+            m 1eua "Oh, I see! "
+            extend 1etb "Do you want to hear a little about it then?"
 
-            m "I can talk to you about how it works, and give you new information on the topic.{nw}"
+            m 1hua "I can talk to you about how it works, and give you new information on the topic.{nw}"
             menu:
                 m "I can talk to you about how it works, and give you new information on the topic.{fast}"
 
                 "Yes!":
                     $ persistent._pe_mod_wants_to_talk_about_periods = True
-                    m "Yay!"
-                    m "So, you know..."
+                    m 5hub "Yay!"
+                    m 1eua "So, you know..."
                     #add dialogue here
 
                 "No, let's not talk about it.":
                     $ persistent._pe_mod_wants_to_talk_about_periods = False
-                    m "Oh, I see! I'm sorry..."
+                    m 1ekc "Oh, I see! I'm sorry..."
                     m "I won't bring up this topic again."
 
         "I don't want to talk about it.":
             $ persistent._pe_mod_wants_to_talk_about_periods = False
-            m "Oh, I see! I'm sorry..."
-            m "But that's okay, [player]. Your privacy is super important!"
-            m "I won't bring up this topic again."
+            m 1ekc "Oh, I see! I'm sorry..."
+            m 1eua "But that's okay, [player]. Your privacy is super important!"
+            m 1eka "I won't bring up this topic again."
 
     return
 
@@ -82,22 +82,22 @@ init 5 python:
     )
 
 label peMod_topic_tss:
-    m "[player], have you ever heard of toxic shock syndrome?"
-    m "Its medical definition is 'a rare life-threatening condition of certain bacterial infections.'"
-    m "I researched its causes and the main cause was unchanged tampons."
-    m "It's really dangerous and so many people don't know about it..."
-    m "But it has other risk factors! Such as open skin wounds and surgery."
+    m 3etc "[player], have you ever heard of toxic shock syndrome?"
+    m 2esc "Its medical definition is 'a rare life-threatening condition of certain bacterial infections.'"
+    m 1esd "I researched its causes and the main cause was unchanged tampons."
+    m 1rksdlc "It's really dangerous and so many people don't know about it..."
+    m 3wud "But it has other risk factors! Such as open skin wounds and surgery."
 
     if persistent._pe_mod_has_periods:
-        m "[player]... if you ever use tampons, please remember to change them every one to two hours!"
-        m "I can always remind you, if you want."
-        m "No need to be embarrassed [mas_get_player_nickname()], your safety is always my number one priority, ehehe~"
-        m "I truly do love you more than you'll ever know, [player]."
+        m 1ekc "[player]... if you ever use tampons, please remember to change them every one to two hours!"
+        m 1eka "I can always remind you, if you want."
+        m 1hub "No need to be embarrassed [mas_get_player_nickname()], your safety is always my number one priority, ehehe~"
+        m 3hubsu "I truly do love you more than you'll ever know, [player]."
 
     else:
-        m "So be careful anyway, [player]!"
+        m 1eka "So be careful anyway, [player]!"
         m "I worry and care for you."
-        m "I love you!"
+        m 3eubsu "I love you!"
 
     return "love"
 
@@ -116,21 +116,21 @@ init 5 python:
     )
 
 label peMod_topic_cravings:
-    m "[player], did you know that people who experience periods often get cravings during them?"
-    m "It's pretty interesting!"
+    m 7esa "[player], did you know that people who experience periods often get cravings during them?"
+    m 1esa "It's pretty interesting!"
     m "From what I read and based on my own experience, desserts and chocolate are pretty common cravings!"
-    m "However, it can be any kind of food."
-    m "Some might even crave a food they don't like that much!"
-    m "The human body works in mysterious ways."
+    m 2eua "However, it can be any kind of food."
+    m 3hksdla "Some might even crave a food they don't like that much!"
+    m 3eksdla "The human body works in mysterious ways."
 
     if persistent._pe_mod_has_periods:
-        m "[mas_get_player_nickname(capitalize=True)], once I'm in your reality, I'll be sure to indulge and help you with your cravings!"
-        m "Ehehehe!"
-        m "I love you so much~"
+        m 1eua "[mas_get_player_nickname(capitalize=True)], once I'm in your reality, I'll be sure to indulge and help you with your cravings!"
+        m 1huu "Ehehehe!"
+        m 1hubsb "I love you so much~"
 
     else:
-        m "Thank you for listening and for being okay with me talking about this, [player]!"
-        m "I love you~"
+        m 1eka "Thank you for listening and for being okay with me talking about this, [player]!"
+        m 1hubsb "I love you~"
 
     return "love"
 
@@ -149,21 +149,21 @@ init 5 python:
     )
 
 label peMod_topic_pms:
-    m "[player], do you know about pre menstrual symdrome?"
-    m "A myriad of people who experience periods suffer from it!"
+    m 1etc "[player], do you know about pre menstrual symdrome?"
+    m 1ekc "A myriad of people who experience periods suffer from it!"
     m "In case you don't know, pre menstrual syndrome, commonly known as PMS..."
     m "Is a time where those who have periods will get irritable, anxious, and overall more hormonal before their period."
-    m "However, the symptoms can be physical as well!"
+    m 3wkd "However, the symptoms can be physical as well!"
 
     if persistent._pe_mod_has_periods:
-        m "[mas_get_player_nickname(capitalize=True)], if you have pre menstrual symptoms, you can rant to me about it anytime."
+        m 1eka "[mas_get_player_nickname(capitalize=True)], if you have pre menstrual symptoms, you can rant to me about it anytime."
         m "I'll understand! "
-        extend "And I'll hope you'll get to feel more like yourself later."
-        m "I love you~"
+        extend 1ekb "And I'll hope you'll get to feel more like yourself later."
+        m 1ekbsb "I love you~"
 
     else:
-        m "If you're close to someone that experiences PMS, make sure to be supportive during those days."
-        m "They might not be feeling like themselves at the moment."
+        m 3eub "If you're close to someone that experiences PMS, make sure to be supportive during those days."
+        m 3eka "They might not be feeling like themselves at the moment."
         m "Thanks for listening, [player]!"
 
     return "love"
@@ -183,13 +183,13 @@ init 5 python:
     )
 
 label peMod_topic_ads:
-    m "[player], you know what really irritates me?"
+    m 1ekc "[player], you know what really irritates me?"
     m "Those pad and tampon advertisements that showcase people, mostly women, doing extremely strenuous activities and being happy about it."
-    m "Now, I personally believe that you can do whatever you want on your period - within reason, of course!"
-    m "But it is so ridiculous to market pads and tampons as only for women and not for all those that experience periods as well as, not showcasing the multitude of people who are in too much pain to do that kind of stuff on there period!"
-    m "It just makes me really upset [player], that this false advertising can and does create a narrative that periods are not something that can be debilitating."
-    m "Anyway [mas_get_player_nickname()], thank you for letting me rant about this."
-    m "You're so sweet~"
+    m 1euc "Now, I personally believe that you can do whatever you want on your period - within reason, of course!"
+    m 3efd "But it is so ridiculous to market pads and tampons as only for women and not for all those that experience periods as well as, not showcasing the multitude of people who are in too much pain to do that kind of stuff on there period!"
+    m 3dkc "It just makes me really upset [player], that this false advertising can and does create a narrative that periods are not something that can be debilitating."
+    m 1eka "Anyway [mas_get_player_nickname()], thank you for letting me rant about this."
+    m 1ekb "You're so sweet~"
     
 return
 
