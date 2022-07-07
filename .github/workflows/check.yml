@@ -3,6 +3,8 @@ name: "Run checks on push"
 on:
   push:
     paths: [ "**.rpy" ]
+  pull_request:
+    paths: [ "**.rpy" ]
 
 jobs:
   check-submod:
