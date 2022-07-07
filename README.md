@@ -1,6 +1,9 @@
 <h1 align="center">🩸 MAS period submod! 🩸</h1>
 <h4 align="center">information about menstruating, and an opportunity for players to tell monika they're on their period, or that they're feeling the symptoms of it</h3>
 <p align="center">
+  <a href="https://github.com/my-otter-self/MAS_period/actions/workflows/check.yml">
+    <img alt="Build status" src="https://img.shields.io/github/workflow/status/my-otter-self/MAS_period/Run%20checks%20on%20push">
+  </a>
   <a href="https://github.com/my-otter-self/MAS_period/releases/latest">
     <img alt="Latest release" src="https://img.shields.io/github/v/release/my-otter-self/MAS_period">
   </a>
