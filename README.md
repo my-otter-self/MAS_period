@@ -1,4 +1,4 @@
-<h1 align="center">🩸 MAS period submod! 🩸</h1>
+<h1 align="center">🦞 MAS period submod! 🦞</h1>
 <h4 align="center">information about menstruating, and an opportunity for players to tell monika they're on their period, or that they're feeling the symptoms of it</h3>
 <p align="center">
   <a href="https://github.com/my-otter-self/MAS_period/actions/workflows/check.yml">
