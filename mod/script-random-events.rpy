@@ -51,8 +51,15 @@ label peMod_topic_intro:
                 "Yes!":
                     $ persistent._pe_mod_wants_to_talk_about_periods = True
                     m 5hub "Yay!"
-                    m 1eua "So, you know..."
-                    #add dialogue here
+                    m 1eua "So, you know... Menstruation is the monthly shedding of the lining of the uterus, or the womb, as some call it!"
+                    m 1lub "The menstrual blood is partly blood and partly tissue from the inside of the uterus..."
+                    m 7lub "And it flows from the uterus through the cervix and out of the body through the vagina."
+                    m 7hub "People can start menstruating on different ages, but it's common that they do on their average age of 12."
+                    m 7lua "When people stop menstruating, it means they're on the menopause -"
+                    extend 2wua " then, they can no longer get pregnant!"
+                    m 2hka "For now, that's all the information I have."
+                    m 4hub "But I'll bring over new facts about the topic, since you're up to talk about it!"
+                    m 2fublu "Thank you for listening, [player]."
 
                 "No, let's not talk about it.":
                     $ persistent._pe_mod_wants_to_talk_about_periods = False
