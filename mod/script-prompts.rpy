@@ -48,7 +48,7 @@ label peMod_topic_cramps:
     m 1hub "Of course, [mas_get_player_nickname()], I'd do anything for you!"
     m 3eub "So, from my personal experience, ibuprofen is the best thing to help with cramps!"
     m "However, from what I researched, you can heat up a heating pad or even lay a heating blanket over the area thats causing you pain, and it should help!"
-    m "Another good thing to do is take a hot bath..."
+    m 3rub "Another good thing to do is take a hot bath..."
     m 3hub "Some people eat ice cream or chocolate when they're dealing with cramps."
     m 1esa "Others have said watching their favorite movie or doing something you really like also helps! Because it'll take your mind off the pain."
     m 1eua "A few even recommended taking a nap if the pain is too bad, because then you won't be able to feel it!"
