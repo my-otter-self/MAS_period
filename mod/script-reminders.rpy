@@ -70,6 +70,7 @@ init 5 python:
 
 label peMod_change_reminder_stop:
     m 7esb "Okay! I'll stop~"
+    m "If you want me to remind you again next month, let me know!"
 
     python:
         # Same here, DO NOT move this anywhere, this has to be right above the return statement.
