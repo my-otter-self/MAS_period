@@ -12,9 +12,11 @@
   </a>
 </p>
 
-## 🌟 features (so far!)
+## 🌟 features 
   
-  * WIP
+  * telling Monika you're on your period;
+  * Monika gives information and advice about periods;
+  * Monika can remind you to change your pads/tampons.
 
 ## ✒️ authors
 
