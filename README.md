@@ -12,23 +12,29 @@
   </a>
 </p>
 
-## 🌟 features 
+## 🌟 Features 
   
   * telling Monika you're on your period;
   * Monika gives information and advice about periods;
   * Monika can remind you to change your pads/tampons;
   * new spritepacks.
 
-## ✒️ authors
+## ❓ Download instructions
 
-We've had plenty of people working on and contributing to this submod! Here's the maintained list of them — see [AUTHORS](AUTHORS.md) page.
+You can check the detailed download instructions at the [wiki](https://github.com/my-otter-self/MAS_period/wiki/%E2%9D%93-Download-instructions).
 
-## 💡 contributing
+## ✒️ Authors
 
-Want to help us develop? Be sure to check out our [CONTRIBUTING](CONTRIBUTING.md) page.
+We've had plenty of people working on and contributing to this submod! You can find the maintained list of them at the [wiki](https://github.com/my-otter-self/MAS_period/wiki/%E2%9C%92%EF%B8%8F-MAS-Period-Mod-Team).
 
-## 💬 join my submod corner at discord
+<p align="center">
+  <a href="https://github.com/my-otter-self/MAS_period/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=my-otter-self/MAS_period&max=6" />
+  </a>
+</p>
 
-i'm up to chat! come join me at mine discord server [here](https://mon.icu/discord).
+## 💬 Join our Discord
 
-![Discord server invitation](https://discordapp.com/api/guilds/970747033071804426/widget.png?style=banner3)
+We're up to chat! Come join us at our Discord server [here](https://mon.icu/discord).
+
+[![Discord server invitation](https://discordapp.com/api/guilds/970747033071804426/widget.png?style=banner3)](https://mon.icu/discord)
