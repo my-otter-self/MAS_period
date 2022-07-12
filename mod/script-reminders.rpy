@@ -88,7 +88,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="peMod_change_reminder",
-            conditional="store.peMod_reminder.shouldTriggerReminder('peMod_medication_reminder')",
+            conditional="store.peMod_reminder.shouldTriggerReminder('peMod_change_reminder')",
             action=EV_ACT_QUEUE,
             rules={"force repeat": None, "bookmark_rule": mas_bookmarks_derand.BLACKLIST}
         )
