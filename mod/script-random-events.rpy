@@ -78,7 +78,7 @@ label peMod_topic_intro:
             m 1eua "But that's okay, [player]. Your privacy is super important!"
             m 1eka "I won't bring up this topic again."
 
-    return
+    return "derandom"
 
 
 #toxic shock syndrome dialogue
