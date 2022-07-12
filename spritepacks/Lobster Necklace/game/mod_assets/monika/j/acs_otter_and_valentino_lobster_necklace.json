@@ -1,0 +1,26 @@
+{
+    "__author": "Valentino and otter",
+    "version": 3,
+    "type": 0,
+    "name": "acs_otter_and_valentino_lobster_necklace",
+    "img_sit": "valentino_lobster_necklace",
+    "pose_map": {
+        "default": "0",
+        "l_default": "5"
+    },
+    "rec_layer": 6,
+    "acs_type": "necklace",
+    "stay_on_start": true,
+    "priority": 8,
+    "dlg_desc": "lobster necklace",
+    "dlg_plural": false,
+    "select_info": {
+        "display_name": "Lobster Necklace",
+        "thumb": "valentino_lobster_necklace",
+        "group": "necklace",
+        "select_dlg": [
+            "Menstruation crustacean!"
+        ]
+    },
+    "giftname": "lobsternecklace"
+}
