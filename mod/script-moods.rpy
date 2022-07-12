@@ -5,7 +5,8 @@ init 5 python:
             eventlabel="peMod_mood_pms",
             prompt="...PMS symptoms.",
             category=[store.mas_moods.TYPE_BAD],
-            unlocked=True
+            conditional="persistent._pe_mod_wants_to_talk_about_periods",
+            action=EV_ACT_UNLOCK
         ),
         code="MOO"
     )
@@ -29,7 +30,8 @@ init 5 python:
             eventlabel="peMod_mood_cramps",
             prompt="...pain from cramps.",
             category=[store.mas_moods.TYPE_BAD],
-            unlocked=True
+            conditional="persistent._pe_mod_wants_to_talk_about_periods",
+            action=EV_ACT_UNLOCK
         ),
         code="MOO"
     )
