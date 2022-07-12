@@ -16,7 +16,8 @@
   
   * telling Monika you're on your period;
   * Monika gives information and advice about periods;
-  * Monika can remind you to change your pads/tampons.
+  * Monika can remind you to change your pads/tampons;
+  * new spritepacks.
 
 ## ✒️ authors
 
