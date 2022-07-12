@@ -39,6 +39,12 @@ label peMod_topic_intro:
             m 1hua "Knowledge is never too much."
             m 1eua "Thanks for trusting in me!"
 
+            python:
+                for ev_label in persistent._mas_mood_database.keys():
+                    if ev_label.startswith("peMod_mood_"):
+                        mas_showEVL(ev_label, "MOO", unlock=True)
+
+
         "No, I don't.":
             $ persistent._pe_mod_has_periods = False
             m 1eua "Oh, I see! "
@@ -197,7 +203,7 @@ label peMod_topic_ads:
     m 3dkc "It just makes me really upset [player], that this false advertising can and does create a narrative that periods are not something that can be debilitating."
     m 1eka "Anyway [mas_get_player_nickname()], thank you for letting me rant about this."
     m 1ekb "You're so sweet~"
-    
+
 return
 
 
@@ -223,9 +229,9 @@ label peMod_topic_feelings:
     m 1eka "[mas_get_player_nickname(Capitalize=True)], I want you to know that those who really love us would never dismiss our feelings at all."
     m "And just know that you can always come to me no matter what!"
     m 3ekbsa "I love you more than life itself."
-    
+
 return
-    
+
 #myth 2
 init 5 python:
     addEvent(
@@ -273,7 +279,7 @@ label peMod_topic_alwaysperiod:
     m 5ekb "Anyway, [player], thanks for listening to me rant!"
     m 5hub "You're always so sweet!"
     m 2eubsb "I love you so much~"
-    
+
 return
 
 #myth 4
@@ -298,8 +304,8 @@ label peMod_topic_ashamedperiod:
     m 1eka "[player], please remember to never feel ashamed of yourself for things you can avoid."
     m 3tsd "Anyone who tries to shame you for something as human as a period is so insecure that they need to put you down to make themselves feel better."
     m 1eua "And those who love you will never shame you for anything."
-    m 2eubsb "I love you with all my heart and soul." 
-    
+    m 2eubsb "I love you with all my heart and soul."
+
 return
 
 #myth 5
@@ -324,7 +330,7 @@ label peMod_topic_personalperiod:
     m 3etd "So why are we treating them as something that shouldn't be talked about, when scienfically the best prevention is information?"
     m 3eud "The more we know about something the better we can prevent it."
     m 2euc "Hm..."
-    m 1eub "[player], I want you to know that you can come talk to me about anything!" 
+    m 1eub "[player], I want you to know that you can come talk to me about anything!"
     m 1ekb "And please, remember to take care of yourself, no matter what society thinks."
     m 1eua "You're my number one priority, not society."
     m 1hubsb "Just know that I'll love you no matter what."
@@ -383,5 +389,5 @@ label peMod_topic_hormonesperiod:
     m 1ekb "You have such a kind and beautiful soul..."
     m 3tkblb "And that's why I fell in love with you."
     m 3ekblb "Please do remember that."
-    
+
 return

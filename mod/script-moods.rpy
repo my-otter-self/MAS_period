@@ -4,9 +4,7 @@ init 5 python:
             persistent._mas_mood_database,
             eventlabel="peMod_mood_pms",
             prompt="...PMS symptoms.",
-            category=[store.mas_moods.TYPE_BAD],
-            conditional="persistent._pe_mod_has_periods",
-            action=EV_ACT_UNLOCK
+            category=[store.mas_moods.TYPE_BAD]
         ),
         code="MOO"
     )
@@ -29,9 +27,7 @@ init 5 python:
             persistent._mas_mood_database,
             eventlabel="peMod_mood_cramps",
             prompt="...pain from cramps.",
-            category=[store.mas_moods.TYPE_BAD],
-            conditional="persistent._pe_mod_has_periods",
-            action=EV_ACT_UNLOCK
+            category=[store.mas_moods.TYPE_BAD]
         ),
         code="MOO"
     )
