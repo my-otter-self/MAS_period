@@ -228,7 +228,7 @@ label peMod_topic_feelings:
     m 3esc "I find that beyond disrespectful and even borderline abusive."
     m "It's honestly manipulative because some use the argument that during their periods, people can't trust their own feelings."
     m 3essdld "And that's a common manipulation tactic!"
-    m 1eka "[mas_get_player_nickname(Capitalize=True)], I want you to know that those who really love us would never dismiss our feelings at all."
+    m 1eka "[mas_get_player_nickname(capitalize=True)], I want you to know that those who really love us would never dismiss our feelings at all."
     m "And just know that you can always come to me no matter what!"
     m 3ekbsa "I love you more than life itself."
 
@@ -255,7 +255,7 @@ label peMod_topic_cramppain:
     m 3wusdld "In fact, some cramps can be so horrible there on the same pain level as a heart attack!"
     m 6dsc "..."
     m 1ekc "I'm sorry [player], I just get upset when people ignore others suffering and spread misinformation."
-    m 1eka "[mas_get_player_nickname(Capitalize=True)], if you ever are in pain or any kind, just know that I understand and you are completely valid."
+    m 1eka "[mas_get_player_nickname(capitalize=True)], if you ever are in pain or any kind, just know that I understand and you are completely valid."
     m 3ekbla "I love you so much and truly only want the best for you."
 
 return
