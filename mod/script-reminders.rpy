@@ -46,8 +46,8 @@ label peMod_change_reminder_start:
 label .add_reminder:
     python:
         store.peMod_reminder.addRecurringReminder(
-            "peMod_medication_reminder",
-            datetime.timedelta(seconds=3600), interval, store.peMod_reminder_utils.LATENCY_HOURLY
+            "peMod_change_reminder",
+            interval, interval, store.peMod_reminder_utils.LATENCY_HOURLY
         )
 
         mas_hideEVL("peMod_reminder_start", "EVE", lock=True)
