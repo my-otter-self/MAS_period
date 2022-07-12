@@ -37,7 +37,7 @@ label peMod_topic_intro:
             m 1ekc "I hope you don't get too inconvenienced by it."
             m 1ekd "Periods can make us so uncomfortable!"
             m 1eka "But it's how our bodies work..."
-            m 1eub "I'll try to give you some tips ans information about it, [player]!"
+            m 1eub "I'll try to give you some tips and information about it, [player]!"
             m 1hua "Knowledge is never too much."
             m 1eua "Thanks for trusting in me!"
 
