@@ -30,8 +30,8 @@ label peMod_topic_intro:
 
         "Yes, I do!":
             python:
-            persistent._pe_mod_has_periods = True 
-            persistent._pe_mod_wants_to_talk_about_periods = True
+                persistent._pe_mod_has_periods = True
+                persistent._pe_mod_wants_to_talk_about_periods = True
             m 1eua "Oh, I see!"
             m 3hua "Another thing we have in common, ehehe~"
             m 1ekc "I hope you don't get too inconvenienced by it."
