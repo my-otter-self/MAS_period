@@ -29,7 +29,7 @@ label peMod_topic_intro:
         m "And I wanted to ask, do you experience periods?{fast}"
 
         "Yes, I do!":
-            $ persistent._pe_mod_has_periods = True
+            $ persistent._pe_mod_has_periods, persistent._pe_mod_wants_to_talk_about_periods = True, True
             m 1eua "Oh, I see!"
             m 3hua "Another thing we have in common, ehehe~"
             m 1ekc "I hope you don't get too inconvenienced by it."
