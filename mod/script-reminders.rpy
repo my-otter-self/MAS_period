@@ -78,7 +78,7 @@ label peMod_change_reminder_stop:
 
         # Hide this event as now we need to enable player to ask to remind again.
         mas_hideEVL("peMod_medication_reminder_stop", "EVE", lock=True)
-        mas_showEVL("peMod_medication_reminder_request", "EVE", unlock=True)
+        mas_showEVL("peMod_medication_reminder_start", "EVE", unlock=True)
 
     return
 

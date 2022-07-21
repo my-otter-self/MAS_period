@@ -19,3 +19,15 @@ init -989 python:
                 "license.txt"
             )
         )
+
+init 10 python:
+    if mas_seenLabels(["peMod_change_reminder_start"]):
+        # Manually unlock as a bugfix
+        if store.peMod_reminder.isReminderActive('peMod_change_reminder'):
+            # Hide start and show stop if reminder is active
+            mas_hideEVL("peMod_change_reminder_start", "EVE", lock=True)
+            mas_showEVL("peMod_change_reminder_stop", "EVE", unlock=True)
+        else:
+            # Hide stop and show start if reminder is not active
+            mas_hideEVL("peMod_medication_reminder_stop", "EVE", lock=True)
+            mas_showEVL("peMod_medication_reminder_start", "EVE", unlock=True)
