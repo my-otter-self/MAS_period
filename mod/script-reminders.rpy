@@ -50,8 +50,8 @@ label .add_reminder:
             interval, interval, store.peMod_reminder_utils.LATENCY_HOURLY
         )
 
-        mas_hideEVL("peMod_reminder_start", "EVE", lock=True)
-        mas_showEVL("peMod_reminder_stop", "EVE", unlock=True)
+        mas_hideEVL("peMod_change_reminder_start", "EVE", lock=True)
+        mas_showEVL("peMod_change_reminder_stop", "EVE", unlock=True)
 
     return "derandom"
 
